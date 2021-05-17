@@ -22,40 +22,38 @@
 
             <!-- Image and text -->
 
-            <nav class="navbar navbar-light">
+            <nav class="navbar navbar-light pl-5">
                 <a class="navbar-brand text-white" href="#">
-                  <img src="assets/img/viajes.svg" width="30" height="30" class="d-inline-block align-top text-white" alt="">
-                  <span>Viajes Chile</span>
+                  <img src="assets/img/viajes.svg" width="50" height="50" class="d-inline-block align-top text-white" alt="">
+                  <span style="font-size:30px">Viajes Chile</span>
                 </a>
             </nav>
 
             <!-- menu -->
 
-            
-            
-
             <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse px-5" style="font-size: 20px;" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                   <a class="nav-link text-white" href="#">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Quienes Somos</a>
+                  <a class="nav-link text-white" href="#quienes">Quienes Somos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">Destacados</a>
+                  <a class="nav-link text-white" href="#destacados">Destacados</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Contacto</a>
+                    <a class="nav-link text-white" href="#contacto">Contacto</a>
                 </li>
               </ul>
             </div>
         </nav>
-
+    </header>
+    
          <!-- Carrusel --> 
 
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -79,18 +77,21 @@
               <span class="sr-only">Next</span>
             </a>
         </div>
-    </header>
+    
 
 
     <section>
-                    <h2 class=" text-white text-center py-3">¿ Quienes somos ?</h2>
-                <hr>
+                    <div class="mb-3 d-none d-sm-block">
+                    <h2 class=" text-white text-center py-3" style="padding: 0 100px;" id="quienes">¿ Quienes somos ?</h2>
+                <hr> 
+                </div>
         <div class="row col d-flex justify-content-center">
-                <div class="border-light mb-3" style="max-width: 30rem;">
-                    
+            <div class="border-light mb-3 d-none d-sm-block" style="max-width: 30rem;">
+
+
                     <div class="card-body">
                         <i class=" card w-100 p-1 text-center fas fa-plane fa-2x bg-info text-white"></i>
-                        <p class="card-text text-white texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        <p class="card-text text-white texto text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Praesent non est aliquam, condimentum ligula ut, facilisis justo. 
                             Curabitur sapien lectus, molestie at nisi sit amet, luctus feugiat eros. 
                             Vivamus at eros aliquam, ultrices nisl ut, pulvinar sem. 
@@ -103,11 +104,11 @@
                             Proin dui mauris, vestibulum non ligula aliquam, maximus sollicitudin velit. 
                         </p>
                     </div>
-                </div>
+            </div>
 
                 <div class="border-light mb-3 d-none d-sm-block" style="max-width: 30rem;">
                     <div class="card-body">
-                        <p class="card-text text-white texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        <p class="card-text text-white texto text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Praesent non est aliquam, condimentum ligula ut, facilisis justo. 
                             Curabitur sapien lectus, molestie at nisi sit amet, luctus feugiat eros. 
                             Vivamus at eros aliquam, ultrices nisl ut, pulvinar sem. 
@@ -126,7 +127,7 @@
                 <div class="border-light mb-3  d-none d-sm-block" style="max-width: 30rem;">
                     <div class="card-body">
                         <i class=" card w-100 p-1 text-center fas fa-route fa-2x bg-info text-white"></i>
-                        <p class="card-text text-white texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        <p class="card-text text-white texto text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Praesent non est aliquam, condimentum ligula ut, facilisis justo. 
                             Curabitur sapien lectus, molestie at nisi sit amet, luctus feugiat eros. 
                             Vivamus at eros aliquam, ultrices nisl ut, pulvinar sem. 
@@ -145,16 +146,17 @@
     </section>
         
     <section>
-        <h2 class=" text-white text-center py-3">Destacados</h2>
-                <hr>
-        
+        <h2 class=" text-white text-center py-3" id="destacados">
+            Destacados
+        </h2>
+        <hr>
         <div class="row col d-flex justify-content-center">
             <div class="col p-3">
                 <div class="card bg-info" style="width: 18rem;" data-toggle="collapse" data-target="#demo1" aria-expanded="false" aria-controls="demo1">
                     <img src="assets/img/card1.jpg" class="card-img-top " style="height: 170px;" alt="card1">
                     <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                        <p>Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.
+                        <h5 class="card-title text-center">Lorem ipsum dolor sit</h5>
+                        <p class="text-justify">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.
                         </p>
                     </div>
                 </div>
@@ -164,8 +166,8 @@
                 <div class="card bg-info" style="width: 18rem;" data-toggle="collapse" data-target="#demo2" aria-expanded="false" aria-controls="demo2">
                     <img src="assets/img/card2.jpg" class="card-img-top" style="height: 170px;" alt="card2">
                     <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                        <p>Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.
+                        <h5 class="card-title text-center">Lorem ipsum dolor sit</h5>
+                        <p class="text-justify">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.
                         </p>
                     </div>
                 </div>
@@ -175,8 +177,8 @@
                 <div class="card bg-info" style="width: 18rem;" data-toggle="collapse" data-target="#demo3" aria-expanded="false" aria-controls="demo3">
                     <img src="assets/img/card3.jpg" class="card-img-top" style="height: 170px;" alt="card3">
                     <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                        <p>Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.
+                        <h5 class="card-title text-center">Lorem ipsum dolor sit</h5>
+                        <p class="text-justify">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.
                         </p>                    
                     </div>
                 </div>
@@ -186,8 +188,8 @@
                 <div class="card bg-info" style="width: 18rem;" data-toggle="collapse" data-target="#demo4" aria-expanded="false" aria-controls="demo4">
                     <img src="assets/img/card4.jpg" class="card-img-top" style="height: 170px;" alt="card4">
                     <div class="card-body">
-                        <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
-                        <p>Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.
+                        <h5 class="card-title text-center">Lorem ipsum dolor sit</h5>
+                        <p class="text-justify">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.
                         </p>                    
                     </div>
                 </div>
@@ -197,7 +199,7 @@
     </section>
         
     <section>
-        <h2 class=" text-white text-center py-3">Contacto</h2>
+        <h2 class=" text-white text-center py-3" id="contacto">Contacto</h2>
                 <hr>
     </section>
     
@@ -213,7 +215,7 @@
         <nav class="navbar navbar-light b-5 bg-info text-white">
             <div class="container col d-flex justify-content-between text-white">
                 <div class="p-3" style="font-weight: 10; font-size: 2rem;">
-                    VIAJES CHILE
+                    <img src="assets/img/viajes.svg" width="50" height="50" class="d-inline-block align-top text-white" alt="">VIAJES CHILE
                 </div>
                 <div class="iconos">
                     <a href="https://github.com" target="_blank"><i class="fab fa-github-square fa-3x mx-3 text-white"></i></a>
